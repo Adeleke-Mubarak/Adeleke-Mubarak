@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="100%" height="100%" fill="none" role="img" aria-label="Mubarak Adeleke (OneNerd) - Product Designer and Developer">
+  <title>Mubarak Adeleke | OneNerd - Product Designer × Developer</title>
+  <desc>Personal brand banner for Mubarak Adeleke (OneNerd): Product Designer and Developer. Designing interfaces, building products, solving real-world problems.</desc>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0B111D"/>
+      <stop offset="100%" stop-color="#06090F"/>
+    </linearGradient>
+
+    <!-- Accent Glow Gradient -->
+    <radialGradient id="blueGlow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#1D4ED8" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0B111D" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cornerGlow" cx="10%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0B111D" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Linear Accent Beam -->
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#3B82F6" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#60A5FA" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.35"/>
+      <circle cx="0" cy="0" r="1" fill="#3B82F6" fill-opacity="0.25"/>
+    </pattern>
+
+    <style>
+      .mono {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      }
+      .sans {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+
+      /* Subtle, high-craft animations */
+      @keyframes beaconPulse {
+        0%, 100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.35;
+          transform: scale(0.85);
+        }
+      }
+
+      @keyframes beamSlide {
+        0% {
+          transform: translateX(-400px);
+        }
+        50%, 100% {
+          transform: translateX(1000px);
+        }
+      }
+
+      @keyframes blinkCursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      @keyframes subtleReveal {
+        0% {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .status-dot {
+        transform-origin: 882px 42px;
+        animation: beaconPulse 2.8s ease-in-out infinite;
+      }
+
+      .beam-line {
+        animation: beamSlide 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+
+      .cursor {
+        animation: blinkCursor 1.1s step-start infinite;
+      }
+
+      .fade-1 {
+        animation: subtleReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      .fade-2 {
+        animation: subtleReveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+      }
+
+      .fade-3 {
+        animation: subtleReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .status-dot, .beam-line, .cursor, .fade-1, .fade-2, .fade-3 {
+          animation: none !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Container Surface -->
+  <rect width="960" height="280" rx="14" fill="url(#bgGradient)"/>
+  <rect width="960" height="280" rx="14" fill="url(#blueGlow)"/>
+  <rect width="960" height="280" rx="14" fill="url(#cornerGlow)"/>
+  
+  <!-- Architectural Grid -->
+  <rect width="960" height="280" rx="14" fill="url(#gridPattern)"/>
+
+  <!-- Border Frame -->
+  <rect x="0.75" y="0.75" width="958.5" height="278.5" rx="13.25" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-opacity="0.8"/>
+
+  <!-- Technical Coordinate Marks -->
+  <g stroke="#334155" stroke-width="1" opacity="0.65">
+    <!-- Top-left mark -->
+    <path d="M 28 20 L 28 32 M 22 26 L 34 26" />
+    <!-- Bottom-right mark -->
+    <path d="M 932 254 L 932 266 M 926 260 L 938 260" />
+  </g>
+
+  <!-- TOP BAR: Status & Identity Metadata -->
+  <g class="fade-1">
+    <!-- Tag Pill -->
+    <rect x="48" y="30" width="132" height="24" rx="5" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    <text x="58" y="46" fill="#94A3B8" font-size="11" font-weight="600" letter-spacing="1.5" class="mono">
+      ONENERD <tspan fill="#3B82F6">/</tspan> 01
+    </text>
+
+    <!-- Breadcrumb / Discipline indicator -->
+    <text x="194" y="46" fill="#475569" font-size="11" font-weight="500" letter-spacing="1" class="mono">
+      SYS.DEV_DESIGN.V2
+    </text>
+
+    <!-- Live Status Beacon -->
+    <rect x="696" y="30" width="216" height="24" rx="5" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="712" cy="42" r="4" fill="#3B82F6" class="status-dot"/>
+    <circle cx="712" cy="42" r="7" fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.4" class="status-dot"/>
+    <text x="726" y="46" fill="#CBD5E1" font-size="10.5" font-weight="500" letter-spacing="1.2" class="mono">
+      PRODUCT × ENGINEERING
+    </text>
+  </g>
+
+  <!-- Subtitle Track -->
+  <g class="fade-2">
+    <text x="48" y="100" fill="#60A5FA" font-size="12" font-weight="700" letter-spacing="3" class="mono">
+      PRODUCT DESIGNER × DEVELOPER
+    </text>
+  </g>
+
+  <!-- Main Hero Typography -->
+  <g class="fade-2">
+    <text x="48" y="152" fill="#F8FAFC" font-size="44" font-weight="800" letter-spacing="-0.8" class="sans">
+      MUBARAK ADELEKE
+    </text>
+    <!-- Terminal cursor -->
+    <rect x="548" y="118" width="4" height="38" fill="#3B82F6" rx="2" class="cursor"/>
+  </g>
+
+  <!-- Divider Line with Animated Glow Beam -->
+  <g>
+    <line x1="48" y1="184" x2="912" y2="184" stroke="#1E293B" stroke-width="1"/>
+    <!-- Animated Light Runner -->
+    <g class="beam-line">
+      <rect x="48" y="183" width="160" height="2" fill="url(#beamGrad)"/>
+    </g>
+  </g>
+
+  <!-- Value Statement & Precision Badges -->
+  <g class="fade-3">
+    <!-- Value Proposition -->
+    <text x="48" y="222" fill="#E2E8F0" font-size="15" font-weight="500" letter-spacing="0.2" class="sans">
+      Designing interfaces. Building products. Solving problems.
+    </text>
+
+    <text x="48" y="244" fill="#64748B" font-size="12.5" font-weight="400" letter-spacing="0.1" class="sans">
+      Bridging user psychology, clean interface architecture, and production-grade code.
+    </text>
+
+    <!-- Technical Stack Capabilities (Right-Aligned) -->
+    <g transform="translate(616, 212)">
+      <!-- UI/UX Tag -->
+      <rect x="0" y="0" width="62" height="24" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="31" y="16" fill="#94A3B8" font-size="10.5" font-weight="600" text-anchor="middle" class="mono">UI/UX</text>
+
+      <!-- FRONTEND Tag -->
+      <rect x="68" y="0" width="76" height="24" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="106" y="16" fill="#94A3B8" font-size="10.5" font-weight="600" text-anchor="middle" class="mono">FRONTEND</text>
+
+      <!-- ANDROID Tag -->
+      <rect x="150" y="0" width="72" height="24" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="186" y="16" fill="#94A3B8" font-size="10.5" font-weight="600" text-anchor="middle" class="mono">ANDROID</text>
+
+      <!-- SYSTEMS Tag -->
+      <rect x="228" y="0" width="68" height="24" rx="4" fill="#1E293B" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="262" y="16" fill="#60A5FA" font-size="10.5" font-weight="600" text-anchor="middle" class="mono">SYSTEMS</text>
+    </g>
+  </g>
+</svg>

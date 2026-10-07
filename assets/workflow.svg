@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 210" width="100%" height="100%" fill="none" role="img" aria-label="Mubarak Adeleke Multidisciplinary Workflow: Design and Development Continuum">
+  <title>Design + Development Continuum</title>
+  <desc>Multidisciplinary workflow: Idea to Research to Wireframe to Design to Build to Test to Iterate, demonstrating the seamless union of product design and software engineering.</desc>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="wfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0A0E1A"/>
+      <stop offset="100%" stop-color="#06090F"/>
+    </linearGradient>
+
+    <!-- Node Gradient Active -->
+    <linearGradient id="nodeActiveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Flow Line Gradient -->
+    <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#60A5FA" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <style>
+      .mono {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      }
+      .sans {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+
+      @keyframes pulseFlow {
+        0% { stroke-dashoffset: 48; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      @keyframes iterateLoop {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      .animated-flow {
+        stroke-dasharray: 4, 4;
+        animation: pulseFlow 2.5s linear infinite;
+      }
+
+      .animated-loop {
+        stroke-dasharray: 6, 6;
+        animation: iterateLoop 6s linear infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .animated-flow, .animated-loop {
+          animation: none !important;
+          stroke-dasharray: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Container Surface -->
+  <rect width="960" height="210" rx="12" fill="url(#wfBg)"/>
+  <rect x="0.75" y="0.75" width="958.5" height="208.5" rx="11.25" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-opacity="0.8"/>
+
+  <!-- Top Discipline Markers / Header Bar -->
+  <g transform="translate(36, 24)">
+    <text x="0" y="0" fill="#64748B" font-size="10.5" font-weight="600" letter-spacing="1.5" class="mono">
+      WORKFLOW PROTOCOL <tspan fill="#3B82F6">//</tspan> THE CONTINUOUS PRODUCT LOOP
+    </text>
+    
+    <!-- Phase Legend -->
+    <g transform="translate(620, -8)">
+      <circle cx="0" cy="8" r="3.5" fill="#60A5FA"/>
+      <text x="8" y="11" fill="#94A3B8" font-size="10" font-weight="500" class="mono">PROBLEM SPACE</text>
+
+      <circle cx="130" cy="8" r="3.5" fill="#3B82F6"/>
+      <text x="138" y="11" fill="#94A3B8" font-size="10" font-weight="500" class="mono">EXECUTION SPACE</text>
+    </g>
+  </g>
+
+  <!-- Main Horizontal Flow Connector -->
+  <line x1="88" y1="94" x2="872" y2="94" stroke="#1E293B" stroke-width="2"/>
+  <line x1="88" y1="94" x2="872" y2="94" stroke="url(#flowGradient)" stroke-width="2" class="animated-flow"/>
+
+  <!-- Feedback / Iteration Arc (from Iterate back to Design/Research) -->
+  <path d="M 868 126 C 868 172, 490 174, 480 128" fill="none" stroke="#3B82F6" stroke-width="1.25" stroke-opacity="0.4" class="animated-loop"/>
+  <polygon points="480,125 476,134 484,134" fill="#3B82F6" opacity="0.6"/>
+  <text x="674" y="174" fill="#60A5FA" font-size="9.5" font-weight="500" letter-spacing="1" text-anchor="middle" class="mono">
+    FEEDBACK REFINEMENT LOOP
+  </text>
+
+  <!-- STAGE 01: IDEA -->
+  <g transform="translate(42, 60)">
+    <rect width="94" height="68" rx="8" fill="url(#nodeActiveGrad)" stroke="#1E293B" stroke-width="1"/>
+    <text x="12" y="22" fill="#64748B" font-size="10" font-weight="600" class="mono">01</text>
+    <text x="12" y="42" fill="#F8FAFC" font-size="12" font-weight="700" letter-spacing="0.5" class="sans">IDEA</text>
+    <text x="12" y="56" fill="#94A3B8" font-size="9" font-weight="500" class="mono">Discovery</text>
+  </g>
+
+  <!-- Arrow 1-2 -->
+  <polygon points="144,94 139,91 139,97" fill="#475569"/>
+
+  <!-- STAGE 02: RESEARCH -->
+  <g transform="translate(152, 60)">
+    <rect width="102" height="68" rx="8" fill="url(#nodeActiveGrad)" stroke="#1E293B" stroke-width="1"/>
+    <text x="12" y="22" fill="#64748B" font-size="10" font-weight="600" class="mono">02</text>
+    <text x="12" y="42" fill="#F8FAFC" font-size="12" font-weight="700" letter-spacing="0.5" class="sans">RESEARCH</text>
+    <text x="12" y="56" fill="#94A3B8" font-size="9" font-weight="500" class="mono">User Context</text>
+  </g>
+
+  <!-- Arrow 2-3 -->
+  <polygon points="262,94 257,91 257,97" fill="#475569"/>
+
+  <!-- STAGE 03: WIREFRAME -->
+  <g transform="translate(270, 60)">
+    <rect width="106" height="68" rx="8" fill="url(#nodeActiveGrad)" stroke="#1E293B" stroke-width="1"/>
+    <text x="12" y="22" fill="#64748B" font-size="10" font-weight="600" class="mono">03</text>
+    <text x="12" y="42" fill="#F8FAFC" font-size="12" font-weight="700" letter-spacing="0.5" class="sans">WIREFRAME</text>
+    <text x="12" y="56" fill="#94A3B8" font-size="9" font-weight="500" class="mono">Architecture</text>
+  </g>
+
+  <!-- Arrow 3-4 -->
+  <polygon points="384,94 379,91 379,97" fill="#475569"/>
+
+  <!-- STAGE 04: DESIGN (Key Pivot) -->
+  <g transform="translate(392, 58)">
+    <rect width="104" height="72" rx="8" fill="#0F172A" stroke="#3B82F6" stroke-width="1.5"/>
+    <text x="12" y="22" fill="#60A5FA" font-size="10" font-weight="700" class="mono">04</text>
+    <text x="12" y="43" fill="#FFFFFF" font-size="13" font-weight="800" letter-spacing="0.5" class="sans">DESIGN</text>
+    <text x="12" y="58" fill="#93C5FD" font-size="9.5" font-weight="600" class="mono">UI Systems</text>
+  </g>
+
+  <!-- Arrow 4-5 (Pivot connection) -->
+  <polygon points="504,94 499,91 499,97" fill="#3B82F6"/>
+
+  <!-- STAGE 05: BUILD -->
+  <g transform="translate(512, 58)">
+    <rect width="104" height="72" rx="8" fill="#0F172A" stroke="#3B82F6" stroke-width="1.5"/>
+    <text x="12" y="22" fill="#60A5FA" font-size="10" font-weight="700" class="mono">05</text>
+    <text x="12" y="43" fill="#FFFFFF" font-size="13" font-weight="800" letter-spacing="0.5" class="sans">BUILD</text>
+    <text x="12" y="58" fill="#93C5FD" font-size="9.5" font-weight="600" class="mono">Engineering</text>
+  </g>
+
+  <!-- Arrow 5-6 -->
+  <polygon points="624,94 619,91 619,97" fill="#475569"/>
+
+  <!-- STAGE 06: TEST -->
+  <g transform="translate(632, 60)">
+    <rect width="94" height="68" rx="8" fill="url(#nodeActiveGrad)" stroke="#1E293B" stroke-width="1"/>
+    <text x="12" y="22" fill="#64748B" font-size="10" font-weight="600" class="mono">06</text>
+    <text x="12" y="42" fill="#F8FAFC" font-size="12" font-weight="700" letter-spacing="0.5" class="sans">TEST</text>
+    <text x="12" y="56" fill="#94A3B8" font-size="9" font-weight="500" class="mono">Validation</text>
+  </g>
+
+  <!-- Arrow 6-7 -->
+  <polygon points="734,94 729,91 729,97" fill="#475569"/>
+
+  <!-- STAGE 07: ITERATE -->
+  <g transform="translate(742, 60)">
+    <rect width="106" height="68" rx="8" fill="url(#nodeActiveGrad)" stroke="#1E293B" stroke-width="1"/>
+    <text x="12" y="22" fill="#64748B" font-size="10" font-weight="600" class="mono">07</text>
+    <text x="12" y="42" fill="#F8FAFC" font-size="12" font-weight="700" letter-spacing="0.5" class="sans">ITERATE</text>
+    <text x="12" y="56" fill="#94A3B8" font-size="9" font-weight="500" class="mono">Refinement</text>
+  </g>
+</svg>
